@@ -81,6 +81,16 @@
       <name>Spring Framework Maven Milestone Releases (Maven Central Format)</name>
       <url>http://maven.springframework.org/milestone</url>
     </repository>
+    
+    <repository>
+        <id>spring-milestones</id>
+        <name>Spring Milestones</name>
+        <url>http://repo.spring.io/milestone</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+    
   </repositories>
   <build>
     <finalName>spring-security-saml2-sample</finalName>
@@ -119,7 +129,7 @@
     <dependency>
       <groupId>org.springframework.security.extensions</groupId>
       <artifactId>spring-security-saml2-core</artifactId>
-      <version>1.0.0.RELEASE</version>
+      <version>1.0.0.RC2</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

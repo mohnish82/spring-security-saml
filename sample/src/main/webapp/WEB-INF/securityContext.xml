@@ -114,12 +114,18 @@
     <bean id="metadataGeneratorFilter" class="org.springframework.security.saml.metadata.MetadataGeneratorFilter">
         <constructor-arg>
             <bean class="org.springframework.security.saml.metadata.MetadataGenerator">
-                <property name="extendedMetadata">
+<!--                 <property name="extendedMetadata">
                     <bean class="org.springframework.security.saml.metadata.ExtendedMetadata">
                         <property name="idpDiscoveryEnabled" value="true"/>
                     </bean>
                 </property>
-            </bean>
+ -->            
+ 				<property name="entityId" value="mohnish82"/>
+ 				<property name="signMetadata" value="false"/>
+ 			
+ 			</bean>
+
+
         </constructor-arg>
     </bean>
 
